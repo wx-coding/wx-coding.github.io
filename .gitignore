@@ -1,0 +1,40 @@
+# Generated files
+public/
+resources/_gen/
+.hugo_build.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp
+*.temp
+*~$*
+
+# Log files
+*.log
+
+# Node modules (if any)
+node_modules/
+
+# Temporary build files
+.tmp/
+.tmp/
+
+# MacOS files
+.AppleDouble
+.LSOverride
