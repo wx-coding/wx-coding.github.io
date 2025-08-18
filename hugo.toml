@@ -1,5 +1,5 @@
 # 网站基础信息
-baseURL = "https://wx-coding.github.io"  # GitHub Pages 地址
+baseURL = "/"  # GitHub Pages 地址
 languageCode = "zh-CN"
 title = "wx-coding"
 theme = "PaperMod"
