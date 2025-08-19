@@ -14,6 +14,7 @@
 - `hugo --minify` - 生产环境构建，包含代码压缩
 - `hugo new posts/文章标题.md` - 在 content/posts/ 创建新博客文章
 - `hugo new 页面标题.md` - 创建新的独立页面
+- **项目记忆**：每次操作完成后，**不要自动启动项目**，**不要执行 `hugo server -D`**
 
 ### 项目目录结构
 - **content/** - 网站内容（文章、页面等）
