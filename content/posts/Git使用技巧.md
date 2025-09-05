@@ -172,7 +172,7 @@ git pull origin branch_name
 
 Git 分支管理是版本控制系统中非常重要的一个方面，它允许开发者在不同的分支上独立工作
 
-##### 查看分支
+### 查看分支
 ```bash
 # 查看本地分支，当前分支有星号（*）
 git branch
@@ -184,7 +184,7 @@ git branch -a
 git fetch --all
 ```
 
-##### 创建分支
+### 创建分支
 
 ```bash
 # 在当前提交的基础上创建一个新分支
@@ -212,7 +212,7 @@ git branch -vv
 | 热修复分支 | `hotfix/hotfix-name` | `hotfix/critical-security-patch` | 用于紧急修复生产环境问题 |
 | 测试分支 | `test/test-name` | `test/integration-tests` | 用于专门的测试工作 |
 
-##### 切换分支
+### 切换分支
 ```bash
 # 切换分支
 git checkout branch_name
@@ -233,21 +233,21 @@ git merge branch_name
 git rebase branch_name
 ```
 
-#### Git Merge 与 Git Rebase 的区别
+### Git Merge 与 Git Rebase 的区别
 
 `git merge` 和 `git rebase` 都是 Git 中用于整合不同分支更改的命令，但它们的工作方式和产生的结果有所不同。
 
-##### Git Merge
+#### Git Merge
 将两个分支的更改合并成一个新的`合并提交`（merge commit），并且保留两者的历史。  
 
 合并的结果是创建一个新的提交，该提交有`两个父提交`，即原本分支的最后一个提交和目标分支的最后一个提交。
 
-##### Git Rebase
+#### Git Rebase
 会将当前分支上的提交 “**移动**” 到目标分支的**最前面**，即将当前分支的每个提交“重放”在目标分支的最新提交上  
 
 会改变分支的历史记录，因此它看起来像是当前分支的所有提交是在目标分支的基础上做的
 
-##### 主要区别
+#### 主要区别
 
 | 特点 | Merge | Rebase |
 |------|-------|--------|
@@ -257,7 +257,7 @@ git rebase branch_name
 | **适用场景** | 团队协作，需要保留所有分支提交记录 | 个人分支或希望清理提交历史 |
 | **对公共分支影响** | 不改变历史，适合团队合作 | 改变历史，不推荐在公共分支使用 |
 
-##### 使用场景
+#### 使用场景
 
 - **使用 merge**：当希望保留分支的历史，尤其是多人协作时，merge 是更好的选择
 - **使用 rebase**：当需要让历史保持线性，或者在个人分支上工作时，rebase 会让提交历史更简洁
@@ -291,7 +291,7 @@ git log branch_name_a..branch_name_b
 
 如果只是想让本地代码回到某个版本，但不改变提交历史，可以使用 `git checkout` 或 `git reset --hard`。
 
-#### 临时回滚（不影响提交历史）
+### 临时回滚（不影响提交历史）
 
 ```bash
 git checkout <目标版本号>
@@ -299,7 +299,7 @@ git checkout <目标版本号>
 
 让工作目录切换到目标版本，但不会修改分支指向。适用于查看历史版本，但不修改当前分支状态。
 
-#### 回滚到指定版本并修改本地提交历史
+### 回滚到指定版本并修改本地提交历史
 
 ```bash
 # 本地回滚但保留代码
@@ -339,7 +339,7 @@ git revert <目标版本号>
 
 ### 统计提交信息
 
-#### 特定时间范围内的提交次数
+### 特定时间范围内的提交次数
 
 ```bash
 git log --since="2025-01-01" --until="2025-03-01" --pretty=oneline | wc -l
@@ -351,13 +351,13 @@ git log --since="2025-01-01" --until="2025-03-01" --pretty=oneline | wc -l
 - `--pretty=oneline`：将每个提交显示为一行
 - `wc -l`：统计提交的行数（即提交的次数）
 
-#### 特定时间范围内的代码行数变化
+### 特定时间范围内的代码行数变化
 
 ```bash
 git log --since="2025-01-01" --until="2025-03-01" --numstat
 ```
 
-#### 统计不同类别的提交次数
+### 统计不同类别的提交次数
 
 ```bash
 git log --since="2025-01-01" --until="2025-03-01" --pretty=format:"%s" | grep -E "^(feat|fix|docs|chore|style|refactor|test)" | sort | uniq -c
@@ -369,7 +369,7 @@ git log --since="2025-01-01" --until="2025-03-01" --pretty=format:"%s" | grep -E
 - `sort`：对提交类别进行排序
 - `uniq -c`：统计每种类别出现的次数
 
-#### 按类别统计并按频率排序
+### 按类别统计并按频率排序
 
 ```bash
 git log --since="2025-01-01" --until="2025-03-01" --pretty=format:"%s" | \
@@ -404,25 +404,6 @@ git push
 ```
 
 
-### 常用工作流技巧
-
-在日常开发中，建议遵循以下流程：
-
-1. **推送前先拉取**：`git push` 之前优先 `git pull`
-2. **冲突处理**：当 `git pull` 发生冲突时，使用 `git stash` 保存当前工作，然后 `git pull`，最后 `git stash pop` 恢复工作
-3. **解决冲突后提交**：解决冲突后再 `git push`
-
-```bash
-# 标准工作流程
-git stash              # 保存当前工作
-git pull              # 拉取最新代码
-git stash pop         # 恢复保存的工作
-# 解决冲突...
-git add .
-git commit -m "resolve conflicts"
-git push
-```
-
 ### Git Stash 详细用法
 
 `git stash` 是临时保存当前工作的强大工具：
@@ -455,7 +436,7 @@ git stash clear
 
 ## 开发最佳实践
 
-### 1. 提交最佳实践
+### 提交最佳实践
 
 - **频繁提交**：小步快跑，每完成一个小功能就提交
 - **清晰的提交信息**：遵循提交规范，让每个提交都有意义
@@ -473,7 +454,7 @@ git commit -m "bug fix"
 git commit -m "代码更新"
 ```
 
-### 2. 分支管理最佳实践
+### 分支管理最佳实践
 
 ```bash
 # 开发新功能的完整流程
@@ -491,7 +472,7 @@ git pull origin main
 git branch -d feature/user-profile   # 删除本地分支
 ```
 
-### 3. 常见问题解决方案
+### 常见问题解决方案
 
 #### 忘记切换分支就开发了
 ```bash
@@ -525,7 +506,7 @@ git add .                           # 标记冲突已解决
 git commit                          # 完成合并
 ```
 
-### 4. Git 配置优化
+### Git 配置优化
 
 ```bash
 # 设置常用别名
