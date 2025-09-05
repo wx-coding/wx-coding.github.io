@@ -25,7 +25,7 @@ Bean的创建过程步骤比较多，这里结合代码一起汇总一下
 
 牢记执行流程，流程如下
 
-![image.png](/images/image.png)
+![image.png](/images/post/image.png)
 
 结合代码查看Bean的创建过程
 
