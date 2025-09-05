@@ -7,11 +7,7 @@ categories = ['技术教程']
 description = '全面的 Git 使用指南，涵盖基础命令、分支管理、版本回滚等核心功能，以及实际开发中的最佳实践'
 toc = true
 showReadingTime = true
-author = 'ideal'
-cover:
-  image = ''
-  alt = 'Git 使用技巧'
-  caption = 'Git 分布式版本控制系统使用指南'
+author = 'wx'
 +++
 
 ## 概述
