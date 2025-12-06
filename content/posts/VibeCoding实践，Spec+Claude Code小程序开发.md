@@ -7,7 +7,7 @@ tags = ['claude code', 'vibe coding']
 +++
 ## 快速开始（安装Claude Code）
 
-### 安装 Node.js（已安装可跳过）
+### <font style="color:rgb(28, 31, 35);">安装 Node.js（已安装可跳过）</font>
 
 ```bash
 # Ubuntu / Debian 用户
@@ -238,7 +238,6 @@ specify init my-project --no-git
 文本生成型应用 API
 文本生成应用无会话支持，适合用于翻译/文章写作/总结 AI 等等。
 基础 URL
-```
 
 curl -X POST 'https://api.dify.ai/v1/completion-messages' \
 --header 'Authorization: Bearer {api_key}' \
@@ -248,9 +247,7 @@ curl -X POST 'https://api.dify.ai/v1/completion-messages' \
   "response_mode": "blocking"
 }'
 
-```
 返回：
-```
 
 {
   "id": "0b089b9a-24d9-48cc-94f8-762677276261",
@@ -258,7 +255,6 @@ curl -X POST 'https://api.dify.ai/v1/completion-messages' \
   "created_at": 1679586667
 }
 
-```
 其中answer中的内容就是藏头诗返回的结果
 在接口请求，是需要结合用户的输入进行拼接然后再去请求。
 我要藏"用户输入框1"，是要表达"用户输入框2"的想法
@@ -310,4 +306,3 @@ A
 最后，所有的开发使用的腾讯云免费提供的服务，使用**云函数**去解决调用其他能力，默认3秒就会超时...所以正式版小程序用不了..定义云函数的环境变量也无法使用
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765036784996-a5c57a1c-57af-44ac-94df-4385a275d30b.png)
-
