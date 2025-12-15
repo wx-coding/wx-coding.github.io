@@ -1,7 +1,7 @@
 # 网站基础信息
 baseURL = "/"  # GitHub Pages 地址
 languageCode = "zh-CN"
-title = "wx-coding"
+title = "wangx"
 theme = "PaperMod"
 enableRobotsTXT = true
 defaultContentLanguage = "zh"
@@ -32,7 +32,7 @@ defaultContentLanguage = "zh"
     weight = 3
 
 [params]
-  description = "wx-coding，分享技术与生活。"
+  description = "wangx，分享技术与生活。"
   showReadingTime = true
   dateFormat = "2006-01-02"
   showToc = true

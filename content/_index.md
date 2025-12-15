@@ -3,7 +3,7 @@ date = '2025-08-19T20:00:00+08:00'
 draft = false
 title = '个人介绍'
 +++
-![头像](https://github.com/wx-coding.png)
+![头像](https://github.com/wangx-wx.png)
 
 **你好，我是 wx**
 
@@ -26,7 +26,7 @@ title = '个人介绍'
  • 学习新技术和分享经验
 
 📫 **联系我**  
- • GitHub：https://github.com/wx-coding
+ • GitHub：https://github.com/wangx-wx
  • 邮箱：wangx.coding@gmail.com
 
 > **欢迎交流**！无论是技术探讨、项目合作，还是单纯打个招呼，都很乐意认识志同道合的朋友。

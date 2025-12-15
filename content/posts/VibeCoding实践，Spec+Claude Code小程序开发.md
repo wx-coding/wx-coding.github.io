@@ -37,7 +37,7 @@ claude --version
 
 [https://anyrouter.top/register?aff=vNlI](https://anyrouter.top/register?aff=vNlI)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765004058576-5b086d21-8554-4c25-ad8b-ba0db4189b4a.png)
+![](/images/posts/8ce78e3e44bd/img_01_d3b8b05f.png)
 
 ## 规约编程
 
@@ -161,15 +161,15 @@ specify init my-project --no-git
 
 更多命令参考Github中的内容[https://github.com/github/spec-kit](https://github.com/github/spec-kit)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765004849671-f21357ba-ab65-45ac-bd57-5a1ae8f0aedb.png)
+![](/images/posts/8ce78e3e44bd/img_02_51bfa1cf.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765004856965-f127a538-c29c-43c8-aa3d-3fcd3e9b752c.png)
+![](/images/posts/8ce78e3e44bd/img_03_9aad7d07.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765004910774-e41704ac-c46a-45ae-bafa-1de6a13e76c5.png)
+![](/images/posts/8ce78e3e44bd/img_04_b3ce6d42.png)
 
 生成了很多命令
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765004941494-3eb7d511-adb9-4e58-ac0f-62483fe3afaf.png)
+![](/images/posts/8ce78e3e44bd/img_05_e393079e.png)
 
 #### 使用技巧
 
@@ -287,22 +287,22 @@ A
 后面让AI调整了一下样式
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765023615320-7e073d31-1f2d-4059-bc82-9d133ba68550.png)
+![](/images/posts/8ce78e3e44bd/img_06_65f1e92d.png)
 
 这里使用Spec-kit进行开发，文档规约比较充分
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765035462180-39608ebb-8db2-41e2-ab72-d1a499ef0df2.png)
+![](/images/posts/8ce78e3e44bd/img_07_f378f647.png)
 
 但是模型的token消耗是巨大的，并且上下文会超长，模型上下文理解也会被减弱....
 
 ### 成果展示
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765036311359-97bd8cb3-159a-4b5a-ba54-29ee1ec1eba3.png)
+![](/images/posts/8ce78e3e44bd/img_08_b4c577a9.png)
 
 可以搜索小程序"指尖工具屋"，或者扫一扫下面的二维码，可以实际体验一下
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765036556588-708fc178-2b75-41a8-aac3-bdb49ca31789.png)
+![](/images/posts/8ce78e3e44bd/img_09_e2e5ec05.png)
 
 最后，所有的开发使用的腾讯云免费提供的服务，使用**云函数**去解决调用其他能力，默认3秒就会超时...所以正式版小程序用不了..定义云函数的环境变量也无法使用
 
-![](https://cdn.nlark.com/yuque/0/2025/png/39110424/1765036784996-a5c57a1c-57af-44ac-94df-4385a275d30b.png)
+![](/images/posts/8ce78e3e44bd/img_10_f7ae0c0c.png)
